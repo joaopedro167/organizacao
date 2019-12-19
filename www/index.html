@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Organização</title>
+
+        <link rel="stylesheet" href="css/jquery.mobile.min.css">
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
+        <script type="text/javascript" src="js/js.js"></script>
+        <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+        
+    </head>
+ <body>
+
+    <div data-role="page" id="principal">
+        <div data-role="header" id="cabecalho">
+            <h1>Organização</h1>
+        </div>
+
+        <div data-role="main" id="conteudo" class="ui-content">
+
+            <!-- MENU DE INICIAL DA TELA -->
+            <div id="inicial">
+                <button data-icon="check" data-inconpos="top" type="button" onclick="home()" id="enviar" class="margem-topo">Cadastrar Evento</button>
+
+                <button data-icon="search" data-inconpos="top" type="button" onclick="listarEventos()" id="enviar" class="margem-topo">Listar Eventos</button>
+            </div> 
+
+            <!-- TELA DE CADASTRO DE EVENTOS -->
+            <div id="cadastro_eventos">
+
+                <label for="usuario">Nome do Evento:</label>
+                <input type="text" name="nome_evento" id="nome_evento">
+
+                <label for="senha">Data do Evento:</label>
+                <input type="text" name="data" id="data_evento">
+
+                <label for="senha">Hora de Início:</label>
+                <input type="text" name="hora_in" id="hora_in">
+
+                <label for="senha">Hora de Término:</label>
+                <input type="text" name="hora_ter" id="hora_ter">
+
+                <button data-icon="check" data-inconpos="top" type="button" onclick="insereEvento()" id="enviar" class="margem-topo">Inserir</button>
+                <button data-icon="power" data-inconpos="top" type="button" onclick="Voltar()" id="voltar" class="margem-topo">Voltar</button>
+            </div>
+		</div>   
+    </div>
+
+	<!-- lISTAGEM DE EVENTOS-->
+	<div id="eventos">
+				
+	</div>
+              
+	<!-- RODAPÉ-->
+    <div data-role="footer" id="rodape">
+        <h1>Copyright João Pedro©</h1>
+    </div>
+ </body>
+</html>

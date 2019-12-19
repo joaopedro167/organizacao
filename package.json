@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "cordova-plugin-dialogs": "~2.0.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-dialogs": {}
+    }
+  },
+  "dependencies": {
+    "cordova-plugin-dialogs": "~2.0.2",
+    "sweetalert2": "^9.5.3"
+  }
+}
